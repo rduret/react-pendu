@@ -92,6 +92,11 @@ class App extends Component{
           </div>
         </div>
 
+        {true &&
+        <div>
+          test
+        </div>
+        }
         <div className="infos">
           <span>{count}</span>
         </div>

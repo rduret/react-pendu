@@ -37,7 +37,7 @@ class App extends Component{
     let { unusedWords, usedWords } = this.state;
     let randomIndex = Math.floor(Math.random() * (unusedWords.length));
     let newWord = unusedWords[randomIndex];
-    let newUnusedWords = unusedWords;
+    let newUnusedWords = unusedWords
     newUnusedWords.splice(randomIndex, 1);
 
     this.setState({
@@ -69,7 +69,7 @@ class App extends Component{
   }
 
   computeDisplay(word, usedLetters) {
-    return word.replace(/\w/g,(letter) => (usedLetters.includes(letter) ? letter : '_'));
+    return word.replace(/\w/g,(letter) => (usedLetters.includes(letter) ? letter : '_'))
   }
 
   render(){

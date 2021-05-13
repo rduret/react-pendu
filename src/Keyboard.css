@@ -1,0 +1,13 @@
+.letterKeyboard{
+    font-size: 2em;
+    outline: 0.08em solid silver;
+    margin: 0.3em;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.used{
+    background-color: rgb(119, 110, 110);
+}

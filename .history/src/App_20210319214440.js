@@ -69,7 +69,7 @@ class App extends Component{
   }
 
   computeDisplay(word, usedLetters) {
-    return word.replace(/\w/g,(letter) => (usedLetters.includes(letter) ? letter : '_'));
+    return word.replace(/\w/g,(letter) => (usedLetters.includes(letter) ? letter : '_'))
   }
 
   render(){
